@@ -1,0 +1,27 @@
+<% include header %>
+
+<h1><i class="material-icons">home</i><a href="/">Terug naar homepage</a></h1>
+
+<h2 class="categorie"><%- categorieen[id] %></h2>
+
+  <% for (var i = 0; i < items.length; i++) { %>
+    <% if (items[i].categorieen.indexOf(categorieen[id]) !== -1) { %>
+      <section>
+          <h2 class="titel">
+            <a href=/items/<%- items[i].id %>><%- items[i].titel %></a>
+          </h2>
+          
+          <img src="/img/<%- items[i].afbeeldings %>" class="klein" alt="<%- items[i].titel %>">
+          
+          
+
+          <p class="samenvatting">
+            <%- items[i].samenvatting %>
+          </p>
+          
+          <p class="datum"><%- items[i].datum %></p>
+      </section>
+    <% } %>
+  <% } %>
+
+<% include footer %>

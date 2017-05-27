@@ -1,0 +1,31 @@
+<% include header %>
+<div class="welkom">
+<h1>WELKOM</h1>
+</div>
+
+<nav>
+
+  <% for (var i = 0; i < categorieen.length; i++) { %><br>
+    <a href="/categorieen/ <%- i %>" class="nav"><%- categorieen[i] %></a>
+  <% } %>
+</nav>
+
+
+  <% var teller = 1; %>
+  <% nieuws.forEach(function(item){ %>
+    <section class="max">
+        <h2 class="titel">
+          <a href=/items/<%- item.id %>><%- item.titel %></a>
+        </h2>
+        <img  src="/img/<%- item.afbeeldings %>" class="klein" alt="">
+        
+
+        <p class="samenvatting"><%- item.samenvatting %></p>
+        
+        <p class="datum"><%- item.datum %></p>
+    </section>
+    <br>
+    <% teller++;}); %>
+
+
+<% include footer %>
