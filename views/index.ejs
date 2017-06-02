@@ -1,10 +1,14 @@
 <% include header %>
-<h1>
-<a href=https://fierce-atoll-99184.herokuapp.com>link huroku</a>
-</h1>
+
 <div class="welkom">
-<h1>WELKOM</h1>
+<img src="img/logo.jpg" class="logo">
+<h1>app - gallo romains museum</h1>
 </div>
+
+<input id="searchBox" type="text" />
+<button id="id_of_the_search_box_button">
+Search
+</button>
 
 <nav>
 
@@ -24,8 +28,7 @@
         
 
         <p class="samenvatting"><%- item.samenvatting %></p>
-        
-        <p class="datum"><%- item.datum %></p>
+    
     </section>
     <br>
     <% teller++;}); %>

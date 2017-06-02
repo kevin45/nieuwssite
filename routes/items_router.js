@@ -2,7 +2,7 @@ var express = require("express");
 var nieuws = express.Router();
 
 nieuws.get('/items/:id', function(req, res) {
-  var nieuwsFile = req.app.get('nieuwsFile');
+  var nieuwsFile = req.app.get('itemsFile');
   var id = req.params.id;
   var teller = 0;
   var item = "";
@@ -13,7 +13,7 @@ nieuws.get('/items/:id', function(req, res) {
     teller++;
   }
   if (item !== "") {
-    res.render("nieuws", {
+    res.render("items", {
       item: item
     });
   } else {

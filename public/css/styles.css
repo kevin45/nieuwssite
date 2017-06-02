@@ -3,18 +3,23 @@ body {
   width: 90%;
   margin: 25px auto;
   line-height: 1.4em;
-background-color: whitesmoke;
+background-color: white;
     text-decoration: none;
 }
 .material-icons{
-    color: darkslategray;
-    
+    color: darkred;  
 }
 
-.welkom{
-    font-size: 30px;
-text-align: left;
+.welkom h1{
+font-size: 25px;
+    float: right;
 margin-top: 50px;
+    color: darkred;
+    font-weight: bold;
+}
+.logo{
+    max-width: 20vw;
+    
 }
 .datum{
     font-size: 12px;
@@ -45,31 +50,33 @@ border-radius: 5px;
 }
 
 .titel a {
-text-decoration: none;
-color: cadetblue;  
+text-decoration: underline;
+color: darkred; 
+font-weight: bolder;
+    
 }
 
 .titelartikel {
 text-decoration: none;
-color: cadetblue;
+color: darkred;
 margin-bottom: 15px;
 
 }
 
 .cat{
    margin-bottom: 15px; 
-    color: dimgray;
+    color: darkred;
 }
 
 .cat a{
    margin-bottom: 15px; 
     text-decoration: none;
-    color: cadetblue;
+    color: darkred;
 }
 .categorie{
     font-size: 2em;
     text-align: left; 
-    color: darkslategray;
+    color: darkred;
     font-weight: bolder;
     margin-top: 35px;
 }
@@ -84,7 +91,7 @@ h1 a{
     text-decoration: none;
     font-size: 15px;
     font-weight: bold;
-    color: darkslategray;
+    color: darkred;
 }
 h1{
     margin-bottom: 15px;
@@ -103,20 +110,24 @@ font-size: 1em;
 
 
 
+
 .nav {
-    display: inline-block;
+    display: block;
   margin-right: 5px;
 text-decoration: none;
     font-size: 1.5em;
-    margin-bottom: 5px;
-    margin-top: 5px;
+    margin-bottom: 1px;
+    margin-top: 1px;
     padding: 10px;
     color: whitesmoke;
-    background-color: cadetblue;
+    background-color: rgb(212,0,19);
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bolder;
 }
 
 .nav:hover {
-    color: cadetblue;
+    color: rgb(212,0,19);
     transition:  0.5s ease;
     background-color: whitesmoke;
     
